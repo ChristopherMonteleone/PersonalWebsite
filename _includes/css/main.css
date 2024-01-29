@@ -233,6 +233,15 @@ section.success {
     color: #fff;
 }
 
+#portfolio .portfolio-flex-item {
+    text-align: center; /* Center-aligns inline and inline-block elements within the container */
+}
+
+#portfolio .portfolio-flex-item .img-responsive {
+    width: 256px; /* Set the width to 256px */
+    height: 256px; /* Set the height to 256px */
+}
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px;
 }
