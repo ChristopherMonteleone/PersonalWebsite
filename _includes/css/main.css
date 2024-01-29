@@ -240,6 +240,9 @@ section.success {
 #portfolio .portfolio-flex-item .img-responsive {
     width: 256px; /* Set the width to 256px */
     height: 256px; /* Set the height to 256px */
+    margin: 0 auto; /* Adds automatic margins on both sides, centering the block-level element */
+    display: block; /* Ensures the image is a block-level element to accept margin: auto */
+    height: auto; /* Keeps the aspect ratio of the image */
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
