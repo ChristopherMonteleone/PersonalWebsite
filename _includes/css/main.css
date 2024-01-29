@@ -246,6 +246,15 @@ section.success {
     z-index: 2;
 }
 
+#portfolio .portfolio-flex-item .icon-title {
+    display: block; /* Ensures the title is on a new line */
+    text-align: center; /* Centers the text */
+    margin-top: 10px; /* Adjust the space between the icon and the text */
+    font-size: 16px; /* Size of the text */
+    color: #333; /* Color of the text, change as needed */
+    font-weight: bold; /* Makes the text bold */
+  }
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
