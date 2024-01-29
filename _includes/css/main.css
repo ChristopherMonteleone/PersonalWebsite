@@ -503,3 +503,31 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+
+#work-experience .job {
+    margin-bottom: 20px;
+  }
+  
+  #work-experience h2 {
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  #work-experience h3 {
+    color: #666;
+    font-size: 1.2em;
+  }
+  
+  #work-experience time {
+    display: block;
+    color: #999;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  #work-experience p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+  }
