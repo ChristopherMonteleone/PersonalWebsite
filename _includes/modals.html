@@ -242,7 +242,14 @@
             <hr class="star-primary">
             <br></br>
             <!-- <img src="img/portfolio/WorkExperience.png" class="img-responsive img-centered" alt="{{ post.alt }}"> -->
-            <p>...</p>
+            
+            <input type="checkbox" id="toggle-checkbox" style="display:none;">
+            <label for="toggle-checkbox" id="toggle-label">Toggle Div</label>
+            <div id="toggle-div">
+                <!-- Your content here -->
+                This is a toggleable div.
+            </div>
+            
             <ul class="list-inline item-details">
               <li>Client:
                 <strong>{{ post.client }}</strong>

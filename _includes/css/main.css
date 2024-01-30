@@ -511,3 +511,17 @@ footer .footer-below {
       padding: 0 10px;
     }
   }
+
+#toggle-div {
+    display: none;
+}
+
+#toggle-checkbox:checked + #toggle-label + #toggle-div {
+    display: block;
+}
+
+/* Optional: Style for the label to make it look like a button */
+#toggle-label {
+    cursor: pointer;
+    /* Add more styles to make it look like a button */
+}
