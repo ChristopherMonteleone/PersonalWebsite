@@ -236,53 +236,33 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Projects</h2>
-            <hr class="star-primary">
-            <br></br>
-            <!-- <img src="img/portfolio/WorkExperience.png" class="img-responsive img-centered" alt="{{ post.alt }}"> -->
-            
-            <p>Select a project to learn more!</p>
-            <p>(Change buttons to be circular icons later)</p>
-
-            <ul class="list-inline item-details">
-              <li>
-                  <button id="toggle-button1" class="toggle-button">Toggle Div 1</button>
-                  <div id="toggle-div1" class="toggle-div">
-                      <!-- Content for div 1 -->
-                      This is toggleable div 1.
-                  </div>
-              </li>
-              <li>
-                  <button id="toggle-button2" class="toggle-button">Toggle Div 2</button>
-                  <div id="toggle-div2" class="toggle-div">
-                      <!-- Content for div 2 -->
-                      This is toggleable div 2.
-                  </div>
-              </li>
-              <li>
-                  <button id="toggle-button3" class="toggle-button">Toggle Div 3</button>
-                  <div id="toggle-div3" class="toggle-div">
-                      <!-- Content for div 3 -->
-                      This is toggleable div 3.
-                  </div>
-              </li>
-            </ul>
-            
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong>{{ post.client }}</strong>
-              </li>
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
-              </li>
-              <li>Service:
-                <strong>{{ post.category }}</strong>
-              </li>
-            </ul>
+          <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                  <h2>Projects</h2>
+                  <hr class="star-primary">
+                  <p>Select a project to learn more!</p>
+                  <ul class="list-inline item-details">
+                      <li>
+                          <button class="toggle-button" data-toggle="div1">Toggle Div 1</button>
+                          <div id="div1" class="toggle-div">
+                              This is toggleable div 1.
+                          </div>
+                      </li>
+                      <li>
+                          <button class="toggle-button" data-toggle="div2">Toggle Div 2</button>
+                          <div id="div2" class="toggle-div">
+                              This is toggleable div 2.
+                          </div>
+                      </li>
+                      <li>
+                          <button class="toggle-button" data-toggle="div3">Toggle Div 3</button>
+                          <div id="div3" class="toggle-div">
+                              This is toggleable div 3.
+                          </div>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </div>
     </div>
 

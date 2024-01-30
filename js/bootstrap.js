@@ -2113,31 +2113,18 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
 }(jQuery);
 
-+function ($) {
-  'use strict';
+document.addEventListener('DOMContentLoaded', function() {
+  var toggleButtons = document.querySelectorAll('.toggle-button');
 
-  // Function to toggle the div
-  function toggleDiv(toggleButtonId, divId) {
-    var button = document.getElementById(toggleButtonId);
-    var div = document.getElementById(divId);
-
-    if (button && div) {
+  toggleButtons.forEach(function(button) {
       button.addEventListener('click', function() {
-        var display = window.getComputedStyle(div).display;
-        if (display === 'none') {
-          div.style.display = 'block';
-        } else {
-          div.style.display = 'none';
-        }
+          var divId = this.getAttribute('data-toggle');
+          var div = document.getElementById(divId);
+          if (div.style.display === 'none' || div.style.display === '') {
+              div.style.display = 'block';
+          } else {
+              div.style.display = 'none';
+          }
       });
-    }
-  }
-
-  // Initialize toggle functionality
-  $(document).ready(function() {
-    toggleDiv('toggle-button1', 'toggle-div1');
-    toggleDiv('toggle-button2', 'toggle-div2');
-    toggleDiv('toggle-button3', 'toggle-div3');
   });
-
-}(jQuery);
+});
