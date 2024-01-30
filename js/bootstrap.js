@@ -2112,3 +2112,32 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   })
 
 }(jQuery);
+
+// Custom script to toggle divs
++function ($) {
+  'use strict';
+
+  // Function to toggle the div
+  function toggleDiv(toggleButtonId, divId) {
+    var button = document.getElementById(toggleButtonId);
+    var div = document.getElementById(divId);
+
+    if (button && div) {
+      button.addEventListener('click', function() {
+        if (div.style.display === 'none') {
+          div.style.display = 'block';
+        } else {
+          div.style.display = 'none';
+        }
+      });
+    }
+  }
+
+  // Initialize toggle functionality
+  $(document).ready(function() {
+    toggleDiv('toggle-button1', 'toggle-div1');
+    toggleDiv('toggle-button2', 'toggle-div2');
+    toggleDiv('toggle-button3', 'toggle-div3');
+  });
+
+}(jQuery);

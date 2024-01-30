@@ -512,27 +512,39 @@ footer .footer-below {
     }
   }
 
-  .toggle-div {
-    display: none;
+.list-inline {
+    padding-left: 0;
+    list-style: none;
 }
 
-#toggle-checkbox1:checked + .toggle-label + #toggle-div1,
-#toggle-checkbox2:checked + .toggle-label + #toggle-div2,
-#toggle-checkbox3:checked + .toggle-label + #toggle-div3 {
-    display: block;
+.list-inline > li {
+    display: inline-block;
+    padding-right: 10px; /* Adjust spacing between list items */
+    vertical-align: top; /* Align items to the top */
 }
 
-.toggle-label {
-    cursor: pointer;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
+.toggle-button {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 6px 12px;
     font-size: 14px;
-    margin-right: 10px; /* Space between buttons */
-    transition: background-color 0.3s ease;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #007bff; /* Example color */
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
-.toggle-label:hover {
-    background-color: #0056b3;
+.toggle-div {
+    display: none; /* Hidden by default */
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
 }
