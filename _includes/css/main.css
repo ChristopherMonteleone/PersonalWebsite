@@ -540,6 +540,11 @@ footer .footer-below {
     border-radius: 4px;
 }
 
+.toggle-button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    /* You can also add other style changes for hover state here */
+}
+
 .toggle-div {
     display: none; /* Hidden by default */
     margin-top: 5px;
