@@ -512,7 +512,7 @@ footer .footer-below {
     }
   }
 
-#toggle-div {
+  #toggle-div {
     display: none;
 }
 
@@ -520,8 +520,26 @@ footer .footer-below {
     display: block;
 }
 
-/* Optional: Style for the label to make it look like a button */
+/* Styling the label to look like a button */
 #toggle-label {
     cursor: pointer;
-    /* Add more styles to make it look like a button */
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-label:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Optional: Style for focus outline */
+#toggle-label:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,.5);
 }
