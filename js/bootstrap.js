@@ -2113,7 +2113,6 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
 }(jQuery);
 
-// Custom script to toggle divs
 +function ($) {
   'use strict';
 
@@ -2124,7 +2123,8 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
     if (button && div) {
       button.addEventListener('click', function() {
-        if (div.style.display === 'none') {
+        var display = window.getComputedStyle(div).display;
+        if (display === 'none') {
           div.style.display = 'block';
         } else {
           div.style.display = 'none';
