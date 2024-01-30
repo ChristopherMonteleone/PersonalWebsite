@@ -503,47 +503,6 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
-
-
-#work-experience {
-    background-color: #f7f7f7; /* Light gray background */
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .work-experience-container {
-    width: 80%;
-    margin: 0 auto; /* Centers the container */
-  }
-  
-  .job-experience {
-    background-color: #ffffff; /* White background for job blocks */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  }
-  
-  .company-name {
-    color: #2c3e50; /* Dark blue-gray color */
-    margin: 0 0 5px 0;
-  }
-  
-  .job-title {
-    color: #34495e; /* Slightly lighter blue-gray */
-    margin: 0;
-  }
-  
-  .job-duration {
-    color: #7f8c8d; /* Muted gray */
-    font-style: italic;
-    margin: 5px 0 10px 0;
-  }
-  
-  .job-description {
-    color: #34495e; /* Matching the job title color */
-    line-height: 1.5; /* Spacing for readability */
-  }
   
   /* If you want to make it responsive for smaller screens */
   @media (max-width: 768px) {
