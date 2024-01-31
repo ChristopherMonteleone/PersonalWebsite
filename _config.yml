@@ -41,8 +41,6 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 #For me: LinkedIn, GitHub, and Email Address
 social:
-  - title: email
-    url: mailto:christophergmonteleone@gmail.com
   - title: github
     url: https://github.com/ChristopherMonteleone
   - title: linkedin
