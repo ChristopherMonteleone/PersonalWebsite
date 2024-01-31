@@ -57,7 +57,7 @@ address:
   - line: Las Vegas, Nevada
 
 # Credits content
-credits: '...'
+credits: 'Created with Freelancer Start Bootstrap theme by jeromelachaud'
 
 # Build settings
 markdown: kramdown
