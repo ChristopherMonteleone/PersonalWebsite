@@ -543,6 +543,7 @@ footer .footer-below {
 .toggle-button:hover {
     background-color: #fff; /* Darker shade for hover */
     /* You can also add other style changes for hover state here */
+    color: #{{site.color.primary}};
 }
 
 .toggle-div {
