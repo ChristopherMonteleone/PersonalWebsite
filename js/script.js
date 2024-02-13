@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var toggleButtons = ['toggle-button1', 'toggle-button2', 'toggle-button3', 'toggle-button4', 'toggle-button5', 'toggle-button6', 'toggle-button7', 'toggle-button8', 'toggle-button9'];
 
     function toggleDivVisibility(clickedButtonId) {
-        var clickedIndex = parseInt(clickedButtonId.replace('toggle-button', '')) - 1;
+        var clickedIndex = parseInt(clickedButtonId.replace('toggle-button', ''), 10) - 1;
         var isGroup1 = clickedIndex < 3;
 
         if (isGroup1) {
@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             for (var i = 3; i < toggleButtons.length; i++) {
                 var divId = 'toggle-div' + (i + 1);
                 var div = document.getElementById(divId);
+                // Ensure divs in the second group are managed correctly
                 div.style.display = i === clickedIndex ? 'block' : 'none';
             }
         }
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleButtons.forEach(function(buttonId) {
         document.getElementById(buttonId).addEventListener('click', function() {
+            // Ensure we pass the button ID correctly to the function
             toggleDivVisibility(buttonId);
         });
     });
