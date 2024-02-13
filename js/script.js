@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         var isGroup1 = clickedIndex < 3;
 
         if (isGroup1) {
-            // For Group 1 (1-3), toggle only the clicked div
-            var divId = 'toggle-div' + (clickedIndex + 1);
-            var div = document.getElementById(divId);
-            div.style.display = div.style.display === 'none' ? 'block' : 'none';
+            // Hide all divs in group 1 (1-3) except the clicked one
+            for (var i = 0; i < 3; i++) {
+                var divId = 'toggle-div' + (i + 1);
+                var div = document.getElementById(divId);
+                div.style.display = i === clickedIndex ? 'block' : 'none';
+            }
         } else {
             // For Group 2 (4-9), hide all in this group except the clicked one
             for (var i = 3; i < toggleButtons.length; i++) {
