@@ -3,23 +3,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var toggleDivs = ['toggle-div1', 'toggle-div2', 'toggle-div3', 'toggle-div4', 'toggle-div5', 'toggle-div6', 'toggle-div7', 'toggle-div8', 'toggle-div9'];
 
     function hideOrShowDivs(clickedIndex) {
-        // Determine the group of the clicked button
-        var group = clickedIndex < 3 ? 'firstGroup' : 'secondGroup';
-
+        // If clickedIndex is for divs 1-3, toggle visibility within that range. If clickedIndex is for divs 4-9, toggle within that range.
         toggleDivs.forEach(function(divId, index) {
             var div = document.getElementById(divId);
-            if (div) {
-                if (group === 'firstGroup' && index < 3) {
-                    // Show or hide divs in the first group (1-3)
+            if (!div) return; // Skip if div is not found
+
+            // Logic for divs 1-3
+            if (clickedIndex < 3) {
+                if (index < 3) {
+                    // Leave divs 1-3 as they are, but ensure the clicked one is visible
+                    div.style.display = index === clickedIndex ? 'block' : div.style.display;
+                } // Divs 4-9 remain unaffected here
+            } else {
+                // Logic for divs 4-9
+                if (index >= 3) {
+                    // Toggle visibility for divs 4-9, based on the clicked button
                     div.style.display = index === clickedIndex ? 'block' : 'none';
-                } else if (group === 'secondGroup' && index >= 3) {
-                    // Show or hide divs in the second group (4-9)
-                    div.style.display = index === clickedIndex ? 'block' : 'none';
-                } else if (group === 'firstGroup' && index >= 3) {
-                    // Ensure divs in the second group remain visible when a div in the first group is clicked
-                    div.style.display = 'block';
-                }
-                // If a div in the second group is clicked, divs in the first group should not be affected and remain as they are
+                } // Divs 1-3 remain unaffected here
             }
         });
     }
