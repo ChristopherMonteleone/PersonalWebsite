@@ -553,9 +553,3 @@ footer .footer-below {
     border-radius: 4px;
     background-color: #f9f9f9;
 }
-
-.container {
-    text-align: center;
-    display: grid;
-    place-items: center;
-}
