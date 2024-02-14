@@ -556,4 +556,6 @@ footer .footer-below {
 
 .container {
     text-align: center;
+    display: grid;
+    place-items: center;
 }
